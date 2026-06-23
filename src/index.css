@@ -7,4 +7,29 @@
   --color-ochre: #c9952c;
   --color-inkblue: #28384d;
   --color-tan: #ebe0ce;
+  --font-serif: "Fraunces Variable", serif;
+  --font-sans: "Work Sans", sans-serif;
+  --breakpoint-md: 810px;
+  --breakpoint-lg: 1200px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #f5efe6;
+  color: #1c1814;
 }
