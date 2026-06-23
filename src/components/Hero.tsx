@@ -38,7 +38,7 @@ export default function Hero() {
                         textTransform: "uppercase",
                     }}
                 >
-                    A Software Studio
+                    Technology · AI · Systems · Research · Education
                 </motion.p>
 
                 {/* Headline */}
@@ -58,7 +58,7 @@ export default function Hero() {
                         maxWidth: "900px",
                     }}
                 >
-                    Crafting considered digital products with editorial care.
+                    Building intelligent systems, innovative software, and impactful digital solutions.
                 </motion.h1>
 
                 {/* Bottom row: description + CTA */}
@@ -96,9 +96,7 @@ export default function Hero() {
                                 color: "#1c1814",
                             }}
                         >
-                            AglenX is a software consulting and product studio. We partner
-                            with founders and teams to bring ambitious ideas to life —
-                            through design, engineering, and strategic clarity.
+                            AglenX bridges academic excellence and real-world engineering — across software development, AI, systems engineering, research, and education.
                         </p>
                     </div>
 
@@ -129,7 +127,7 @@ export default function Hero() {
                                 el.style.color = "#1c1814";
                             }}
                         >
-                            View our work
+                            Our Capabilities
                         </a>
                         <a
                             href="#contact"

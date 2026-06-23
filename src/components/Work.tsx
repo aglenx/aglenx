@@ -1,42 +1,45 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 
-const projects = [
+const capabilities = [
     {
         num: "01",
-        name: "Meridian",
-        category: "Product Design · Engineering",
-        year: "2024",
-        desc: "A financial planning platform for independent advisors. We designed the full product experience and built the core React application from the ground up.",
-        tags: ["React", "TypeScript", "Design System"],
+        name: "AglenX Technologies",
+        category: "Software Development",
+        desc: "AglenX Technologies focuses on delivering high-quality software solutions for businesses and organizations. From web applications and enterprise software to cloud-based systems and custom digital platforms, we help clients transform ideas into reliable, scalable, and user-friendly products. Our goal is to combine engineering excellence with practical business value.",
+        tags: ["Web Apps", "Enterprise Software", "Cloud Systems", "Digital Platforms"],
     },
     {
         num: "02",
-        name: "Forma Health",
-        category: "Brand · Web · Engineering",
-        year: "2024",
-        desc: "Complete digital identity for a preventative health startup — from brand strategy through to a custom CMS-powered marketing site.",
-        tags: ["Next.js", "Sanity", "Brand"],
+        name: "AglenX AI",
+        category: "Artificial Intelligence",
+        desc: "AglenX AI is dedicated to artificial intelligence, machine learning, and data-driven innovation. We explore intelligent solutions that enable better decision-making, automation, prediction, and problem-solving. Our work spans machine learning research, predictive analytics, computer vision, and AI-powered applications designed to address real-world challenges.",
+        tags: ["Machine Learning", "Predictive Analytics", "Computer Vision", "AI Applications"],
     },
     {
         num: "03",
-        name: "Loch",
-        category: "Engineering · Strategy",
-        year: "2023",
-        desc: "Backend architecture and API design for a logistics startup moving from MVP to scale. Performance engineering, database modelling, and infrastructure.",
-        tags: ["Node.js", "PostgreSQL", "AWS"],
+        name: "AglenX Systems",
+        category: "Systems Engineering",
+        desc: "AglenX Systems specializes in the design, development, and optimization of complex software and computing infrastructures. We focus on scalable architectures, distributed systems, cloud technologies, databases, cybersecurity, and performance engineering. Our objective is to build robust systems capable of supporting modern applications at scale.",
+        tags: ["Distributed Systems", "Cloud Infrastructure", "Cybersecurity", "Performance Engineering"],
     },
     {
         num: "04",
-        name: "Verse",
-        category: "Product Design",
-        year: "2023",
-        desc: "A poetry discovery app. Full UX research, interaction design, and a complete Figma component library handed to the client's engineering team.",
-        tags: ["Figma", "UX Research", "iOS"],
+        name: "AglenX Labs",
+        category: "Research & Innovation",
+        desc: "AglenX Labs serves as the research and innovation arm of AglenX. It is a space for experimentation, exploration, and the development of new ideas in artificial intelligence, algorithms, systems engineering, and emerging technologies. Through research projects, open-source initiatives, and technical publications, AglenX Labs aims to contribute to the global technology community.",
+        tags: ["AI Research", "Algorithms", "Open Source", "Publications"],
+    },
+    {
+        num: "05",
+        name: "AglenX Academy",
+        category: "Education & Mentorship",
+        desc: "AglenX Academy is committed to empowering learners through high-quality education in mathematics, computer science, artificial intelligence, and software engineering. We provide learning resources, mentorship, workshops, tutorials, and practical training designed to help students and professionals develop strong foundations and industry-ready skills.",
+        tags: ["Mathematics", "Computer Science", "AI Education", "Mentorship"],
     },
 ];
 
-function WorkRow({ project, index }: { project: typeof projects[0]; index: number }) {
+function WorkRow({ project, index }: { project: typeof capabilities[0]; index: number }) {
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: "-60px" });
@@ -126,17 +129,7 @@ function WorkRow({ project, index }: { project: typeof projects[0]; index: numbe
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
-                    <span
-                        style={{
-                            fontFamily: "Work Sans, sans-serif",
-                            fontSize: "14px",
-                            fontWeight: 400,
-                            color: "#1c181470",
-                        }}
-                        className="work-year"
-                    >
-                        {project.year}
-                    </span>
+
                     <motion.span
                         animate={{ rotate: open ? 45 : 0 }}
                         transition={{ duration: 0.3, ease: [0.44, 0, 0.56, 1] }}
@@ -274,7 +267,7 @@ export default function Work() {
                             textTransform: "uppercase",
                         }}
                     >
-                        Selected Work
+                        Capabilities
                     </p>
                     <h2
                         style={{
@@ -288,13 +281,13 @@ export default function Work() {
                             fontVariationSettings: '"opsz" 48, "wght" 400',
                         }}
                     >
-                        Work we're proud of.
+                        What we do.
                     </h2>
                 </motion.div>
 
                 {/* Accordion rows */}
                 <div>
-                    {projects.map((p, i) => (
+                    {capabilities.map((p, i) => (
                         <WorkRow key={p.num} project={p} index={i} />
                     ))}
                 </div>
