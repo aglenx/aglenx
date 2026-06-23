@@ -70,19 +70,19 @@ export function TeamSection() {
 
     const members = [
         {
-            name: "Alex Glen",
-            role: "Founder · Design & Strategy",
-            bio: "Previously at Figma and a top-four design consultancy. Obsessed with the intersection of product thinking and visual craft.",
+            name: "Mirza Ahsan Baig",
+            role: "Founder · AI & Systems Engineering",
+            bio: "Computer Science student at FAST NUCES with interests in Artificial Intelligence, Machine Learning, Systems Design, Algorithms, and Research. Currently involved in AI research and focused on building intelligent systems that bridge academic rigor and real-world impact.",
         },
         {
-            name: "Mira Kosta",
-            role: "Partner · Engineering",
-            bio: "Full-stack engineer with a decade of building for startups at Series A through IPO. Led engineering at two YC companies.",
+            name: "Mirza Ahmad Baig",
+            role: "Operations & Business Development",
+            bio: "Supporting the growth and long-term vision of AglenX through business operations, client relations, and organizational development. Focused on building sustainable processes that enable technology and innovation to scale.",
         },
         {
-            name: "Jude Osei",
-            role: "Collaborator · Brand",
-            bio: "Independent brand strategist and typographer. Brings a slow, considered approach to identity systems that outlast trends.",
+            name: "Mirza Kamal Baig",
+            role: "Advisor · Strategy & Operations",
+            bio: "Technology professional with an MSCS, DAE Mechanical Engineering, and B.Com background, bringing over 15 years of leadership and administrative experience from the telecommunications sector. Provides strategic guidance, operational oversight, and organizational development support to AglenX, helping transform technical ideas into sustainable long-term initiatives.",
         },
     ];
 
@@ -120,12 +120,12 @@ export function TeamSection() {
                             fontFamily: "Work Sans, sans-serif",
                             fontSize: "14px",
                             fontWeight: 500,
-                            color: "#f5efe640",
+                            color: "#f5efe690",
                             letterSpacing: "0.08em",
                             textTransform: "uppercase",
                         }}
                     >
-                        The People
+                        The Team
                     </p>
                     <h2
                         style={{
@@ -139,7 +139,7 @@ export function TeamSection() {
                             fontVariationSettings: '"opsz" 48, "wght" 400',
                         }}
                     >
-                        Small on purpose.
+                        Built by curious minds. Driven by engineering.
                     </h2>
                 </motion.div>
 
@@ -209,7 +209,7 @@ export function TeamSection() {
                                     fontFamily: "Work Sans, sans-serif",
                                     fontSize: "13px",
                                     fontWeight: 500,
-                                    color: "#f5efe640",
+                                    color: "#f5efe690",
                                     letterSpacing: "0.05em",
                                     textTransform: "uppercase",
                                 }}

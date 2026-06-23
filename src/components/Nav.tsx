@@ -5,8 +5,8 @@ export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const links = [
-        { label: "Work", href: "#work" },
-        { label: "Studio", href: "#studio" },
+        { label: "Projects", href: "https://github.com/mirza-ahsan", external: true },
+        { label: "Courses", href: "#" },
         { label: "Services", href: "#services" },
     ];
 
@@ -61,6 +61,11 @@ export default function Nav() {
                         <a
                             key={l.label}
                             href={l.href}
+                            target={l.external ? "_blank" : undefined}
+                            rel={l.external ? "noopener noreferrer" : undefined}
+                            onClick={(e) => {
+                                if (l.href === "#") e.preventDefault();
+                            }}
                             style={{
                                 fontFamily: "Work Sans, sans-serif",
                                 fontSize: "15px",
@@ -183,7 +188,12 @@ export default function Nav() {
                                 <a
                                     key={l.label}
                                     href={l.href}
-                                    onClick={() => setMenuOpen(false)}
+                                    target={l.external ? "_blank" : undefined}
+                                    rel={l.external ? "noopener noreferrer" : undefined}
+                                    onClick={(e) => {
+                                        if (l.href === "#") e.preventDefault();
+                                        setMenuOpen(false);
+                                    }}
                                     style={{
                                         fontFamily: "Work Sans, sans-serif",
                                         fontSize: "17px",

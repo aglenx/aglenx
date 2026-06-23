@@ -2,10 +2,9 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Work from "./components/Work";
-import Marquee from "./components/Marquee";
 import { TeamSection } from "./components/Marquee";
 import Services from "./components/Services";
-import Pricing from "./components/Pricing";
+
 import Contact from "./components/Contact";
 
 export default function App() {
@@ -16,9 +15,9 @@ export default function App() {
                 <Hero />
                 <About />
                 <Work />
-                <Marquee />
+
                 <Services />
-                <Pricing />
+
                 <TeamSection />
                 <Contact />
             </main>

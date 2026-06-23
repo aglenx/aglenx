@@ -73,21 +73,9 @@ export default function About() {
                                 textTransform: "uppercase",
                             }}
                         >
-                            The Studio
+                            Our Mission
                         </p>
-                        <p
-                            style={{
-                                fontFamily: "Fraunces Variable, serif",
-                                fontSize: "72px",
-                                fontWeight: 400,
-                                fontStyle: "italic",
-                                lineHeight: "1",
-                                color: "#1c1814",
-                                fontVariationSettings: '"opsz" 72, "wght" 400',
-                            }}
-                        >
-                            01
-                        </p>
+
                     </motion.div>
 
                     {/* Right: body */}
@@ -116,7 +104,7 @@ export default function About() {
                                 fontVariationSettings: '"opsz" 48, "wght" 400',
                             }}
                         >
-                            We are a small, focused studio — not an agency.
+                            Where rigour meets real-world impact.
                         </h2>
                         <p
                             style={{
@@ -127,10 +115,7 @@ export default function About() {
                                 color: "#1c1814",
                             }}
                         >
-                            AglenX was built on the belief that great software is shaped
-                            by thoughtful people who care about both form and function. We
-                            work with a tight network of trusted collaborators — designers,
-                            engineers, strategists — to deliver work that lasts.
+                            AglenX is a technology-driven venture building intelligent systems, innovative software, and impactful digital solutions. We operate at the intersection of academic excellence and real-world engineering — spanning software development, artificial intelligence, systems engineering, research, and education.
                         </p>
 
                         {/* Blockquote */}
@@ -155,9 +140,7 @@ export default function About() {
                                     fontVariationSettings: '"opsz" 20, "wght" 500',
                                 }}
                             >
-                                "We don't do bloated teams or billable-hour games. We do
-                                honest, direct work — with the people who will actually
-                                build it."
+                                "We exist at the boundary where research becomes product, where algorithms meet users, and where education becomes the foundation for the next generation of engineers."
                             </p>
                         </blockquote>
                     </motion.div>
@@ -176,14 +159,15 @@ export default function About() {
                         width: "100%",
                         paddingTop: "34px",
                         borderTop: "1px solid #1c181429",
+                        alignItems: "flex-end",
                     }}
                     className="about-stats"
                 >
                     {[
-                        { num: "12+", label: "Products shipped" },
-                        { num: "8", label: "Founding clients" },
-                        { num: "3", label: "Years in practice" },
-                    ].map((s) => (
+                        { num: "5", label: "Focus areas" },
+                        { num: "AI & Systems", label: "Research & engineering", numSize: "28px" },
+                        { num: "∞", label: "Education & mentorship" },
+                    ].map((s: { num: string; label: string; numSize?: string }) => (
                         <div
                             key={s.num}
                             style={{
@@ -195,7 +179,7 @@ export default function About() {
                             <p
                                 style={{
                                     fontFamily: "Fraunces Variable, serif",
-                                    fontSize: "48px",
+                                    fontSize: s.numSize ?? "48px",
                                     fontWeight: 400,
                                     fontStyle: "italic",
                                     lineHeight: "1",

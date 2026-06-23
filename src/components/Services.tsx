@@ -3,28 +3,28 @@ import { useRef } from "react";
 
 const services = [
     {
-        title: "Product Design",
-        desc: "From wireframe to polished UI — we design products people want to use. UX research, interaction design, prototyping, and a complete handoff design system.",
+        title: "Artificial Intelligence & Machine Learning",
+        desc: "We design and implement machine learning solutions that transform data into actionable insights. From predictive analytics and intelligent automation to computer vision and applied AI research, we help organizations leverage modern AI technologies to solve real-world problems.",
     },
     {
-        title: "Web Engineering",
-        desc: "Modern, performant web applications built with React, Next.js, and TypeScript. We write code that scales and teams can maintain.",
+        title: "Software Engineering",
+        desc: "We build reliable, scalable, and maintainable software solutions tailored to business and research needs. Our expertise spans web applications, backend systems, APIs, databases, and modern development practices.",
     },
     {
-        title: "Brand & Identity",
-        desc: "Logos, typography, colour systems, and the visual language that ties everything together. Strategy-led, execution-focused.",
+        title: "Systems Design & Architecture",
+        desc: "We design robust software architectures capable of supporting growth, performance, and reliability. Our focus includes distributed systems, cloud-native applications, scalability, security, and long-term maintainability.",
     },
     {
-        title: "Strategy & Advisory",
-        desc: "For founders who need a thinking partner. Product strategy, technical diligence, hiring plans, and roadmap workshops.",
+        title: "Research & Innovation",
+        desc: "We explore emerging technologies and translate research into practical applications. Through experimentation, prototyping, and collaborative research projects, we bridge the gap between academic discovery and industry impact.",
     },
     {
-        title: "Backend & APIs",
-        desc: "Reliable server-side architecture, database design, and third-party integrations — built for the long term, not just the demo.",
+        title: "Algorithms & Optimization",
+        desc: "We develop efficient algorithmic solutions for complex computational challenges. From data structures and optimization techniques to performance engineering, we focus on building systems that are both elegant and efficient.",
     },
     {
-        title: "Content & Editorial",
-        desc: "Copywriting, content strategy, and editorial direction for founders who want words that work as hard as their product.",
+        title: "Education & Technical Mentorship",
+        desc: "We share knowledge through mentoring, technical content, workshops, and educational initiatives. Our mission is to help students and professionals develop strong foundations in mathematics, computer science, artificial intelligence, and software engineering.",
     },
 ];
 
