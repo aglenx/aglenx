@@ -5,7 +5,7 @@ export default function About() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: "-80px" });
 
-    const fadeUp = {
+    const fadeUp: any = {
         hidden: { opacity: 0, y: 24 },
         visible: (i: number) => ({
             opacity: 1,
