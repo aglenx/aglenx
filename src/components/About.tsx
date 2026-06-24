@@ -170,6 +170,7 @@ export default function About() {
                     ].map((s: { num: string; label: string; numSize?: string }) => (
                         <div
                             key={s.num}
+                            className="about-stat-item"
                             style={{
                                 display: "flex",
                                 flexDirection: "column",
@@ -210,7 +211,8 @@ export default function About() {
                     .about-row { flex-direction: column !important; gap: 24px !important; }
                     .about-label-col { width: 100% !important; }
                     .about-blockquote { padding-left: 24px !important; }
-                    .about-stats { flex-direction: column !important; gap: 28px !important; }
+                    .about-stats { flex-direction: column !important; gap: 28px !important; align-items: center !important; }
+                    .about-stat-item { align-items: center !important; text-align: center; }
                 }
                 @media (min-width: 810px) and (max-width: 1199.98px) {
                     .about-row { gap: 48px !important; }
