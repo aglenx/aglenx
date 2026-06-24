@@ -1,14 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const links = [
-        { label: "Projects", href: "https://github.com/mirza-ahsan", external: true },
-        { label: "Courses", href: "#" },
+        { label: "Capabilities", href: "#capabilities" },
         { label: "Services", href: "#services" },
+        { label: "Projects", href: "#projects" },
+        { label: "Team", href: "#team" },
     ];
+
+    // Dynamically update the URL hash as the user scrolls
+    useEffect(() => {
+        const sections = Array.from(document.querySelectorAll<HTMLElement>("section[id]"));
+        if (sections.length === 0) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        history.replaceState(null, "", `#${entry.target.id}`);
+                    }
+                });
+            },
+            // Fire when the section crosses into the middle band of the viewport
+            { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <header

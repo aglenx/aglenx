@@ -225,7 +225,7 @@ export default function Work() {
 
     return (
         <section
-            id="work"
+            id="capabilities"
             style={{
                 backgroundColor: "#ebe0ce",
                 width: "100%",
