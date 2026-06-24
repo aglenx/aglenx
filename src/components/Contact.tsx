@@ -49,6 +49,7 @@ export default function Contact() {
     const [errors, setErrors] = useState<Record<string, string>>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [submitError, setSubmitError] = useState("");
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value, type } = e.target;
@@ -88,13 +89,14 @@ export default function Contact() {
         if (!validateForm()) return;
 
         setIsSubmitting(true);
+        setSubmitError("");
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+                    access_key: "0503d36a-a134-4487-954d-db946be0f2f1",
                     subject: `New Inquiry: ${formData.service || inquiryType}`,
                     ...formData
                 })
@@ -112,10 +114,13 @@ export default function Contact() {
             
                 setTimeout(() => setIsSuccess(false), 6000);
             } else {
-                console.error("Form submission failed");
+                const data = await response.json().catch(() => ({}));
+                setSubmitError(data.message || "Something went wrong. Please try emailing us directly.");
+                console.error("Form submission failed", data);
             }
         } catch (error) {
             console.error(error);
+            setSubmitError("Network error. Please check your connection and try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -451,6 +456,20 @@ export default function Contact() {
                                     }}
                                 >
                                     Your request has been recorded. We will get back to you shortly.
+                                </motion.p>
+                            )}
+                            {submitError && (
+                                <motion.p
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    style={{
+                                        fontFamily: "Work Sans",
+                                        fontSize: "15px",
+                                        color: "red",
+                                        margin: 0,
+                                    }}
+                                >
+                                    {submitError}
                                 </motion.p>
                             )}
                             {Object.keys(errors).length > 0 && (
