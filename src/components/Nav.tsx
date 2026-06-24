@@ -83,8 +83,6 @@ export default function Nav() {
                         <a
                             key={l.label}
                             href={l.href}
-                            target={l.external ? "_blank" : undefined}
-                            rel={l.external ? "noopener noreferrer" : undefined}
                             onClick={(e) => {
                                 if (l.href === "#") e.preventDefault();
                             }}
@@ -210,8 +208,6 @@ export default function Nav() {
                                 <a
                                     key={l.label}
                                     href={l.href}
-                                    target={l.external ? "_blank" : undefined}
-                                    rel={l.external ? "noopener noreferrer" : undefined}
                                     onClick={(e) => {
                                         if (l.href === "#") e.preventDefault();
                                         setMenuOpen(false);
