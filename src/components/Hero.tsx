@@ -100,65 +100,7 @@ export default function Hero() {
                         </p>
                     </div>
 
-                    <div style={{ display: "flex", flexDirection: "row", gap: "16px", flexShrink: 0 }}>
-                        <a
-                            href="#work"
-                            style={{
-                                fontFamily: "Work Sans, sans-serif",
-                                fontSize: "15px",
-                                fontWeight: 500,
-                                color: "#1c1814",
-                                textDecoration: "none",
-                                border: "1.5px solid #1c1814",
-                                borderRadius: "100px",
-                                padding: "13px 28px",
-                                whiteSpace: "nowrap",
-                                transition:
-                                    "background 0.25s cubic-bezier(.44,0,.56,1), color 0.25s cubic-bezier(.44,0,.56,1)",
-                            }}
-                            onMouseEnter={(e) => {
-                                const el = e.currentTarget;
-                                el.style.background = "#1c1814";
-                                el.style.color = "#f5efe6";
-                            }}
-                            onMouseLeave={(e) => {
-                                const el = e.currentTarget;
-                                el.style.background = "transparent";
-                                el.style.color = "#1c1814";
-                            }}
-                        >
-                            Our Capabilities
-                        </a>
-                        <a
-                            href="#contact"
-                            style={{
-                                fontFamily: "Work Sans, sans-serif",
-                                fontSize: "15px",
-                                fontWeight: 500,
-                                color: "#f5efe6",
-                                textDecoration: "none",
-                                background: "#c75b39",
-                                borderRadius: "100px",
-                                padding: "13px 28px",
-                                whiteSpace: "nowrap",
-                                border: "1.5px solid #c75b39",
-                                transition:
-                                    "background 0.25s cubic-bezier(.44,0,.56,1), color 0.25s cubic-bezier(.44,0,.56,1)",
-                            }}
-                            onMouseEnter={(e) => {
-                                const el = e.currentTarget;
-                                el.style.background = "#b34e2f";
-                                el.style.borderColor = "#b34e2f";
-                            }}
-                            onMouseLeave={(e) => {
-                                const el = e.currentTarget;
-                                el.style.background = "#c75b39";
-                                el.style.borderColor = "#c75b39";
-                            }}
-                        >
-                            Start a project
-                        </a>
-                    </div>
+
                 </motion.div>
             </div>
 

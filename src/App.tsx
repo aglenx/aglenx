@@ -4,6 +4,7 @@ import About from "./components/About";
 import Work from "./components/Work";
 import { TeamSection } from "./components/Marquee";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
 
 import Contact from "./components/Contact";
 
@@ -17,6 +18,7 @@ export default function App() {
                 <Work />
 
                 <Services />
+                <Projects />
 
                 <TeamSection />
                 <Contact />
