@@ -8,6 +8,7 @@ export default function Nav() {
         { label: "Capabilities", href: "#capabilities" },
         { label: "Services", href: "#services" },
         { label: "Projects", href: "#projects" },
+        { label: "Courses", href: "#courses" },
         { label: "Team", href: "#team" },
     ];
 

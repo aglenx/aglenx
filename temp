@@ -1,0 +1,166 @@
+This is a very good direction. For AglenX, a professional inquiry form will make the company look much more established than a simple email link.
+
+However, I would simplify it slightly because AglenX is still early-stage. Too many fields can reduce inquiries.
+
+My Recommended Contact Form
+
+Basic Information
+
+Full Name *
+
+Email Address *
+
+Company / Organization
+
+Country
+
+WhatsApp Number *
+
+
+Service Required *
+
+Dropdown:
+
+Web Development
+
+AI & Machine Learning
+
+System Design & Architecture
+
+Research & Data Science
+
+Mobile App Development
+
+UI/UX Design
+
+O/A Level Tutoring
+
+University Mentoring
+
+Other
+
+
+Project Budget
+
+Dropdown:
+
+Under $500
+
+$500 – $1,000
+
+$1,000 – $3,000
+
+$3,000 – $5,000
+
+$5,000+
+
+Not Sure Yet
+
+
+Project Timeline
+
+Dropdown:
+
+ASAP
+
+Within 1 Month
+
+Within 3 Months
+
+Long-Term Partnership
+
+
+Project Description *
+
+Large text area:
+
+> Tell us about your project, goals, requirements, and any relevant details.
+
+
+
+
+---
+
+WhatsApp Integration (Highly Recommended)
+
+Many clients prefer WhatsApp over forms.
+
+Add a section:
+
+Prefer a direct conversation?
+
+📧 contact@aglenx.com
+
+💬 WhatsApp Business
+
+📅 Schedule a Discovery Call
+
+When the WhatsApp button is clicked:
+
+Hello AglenX,
+
+My name is [Name].
+
+I am interested in:
+[Selected Service]
+
+Budget:
+[Budget]
+
+Project Details:
+[Description]
+
+This can automatically open WhatsApp with the message prefilled.
+
+
+---
+
+Email Format Sent To AglenX
+
+When a form is submitted:
+
+Subject
+
+New Project Inquiry - AI & Machine Learning
+
+Body
+
+Name: John Smith
+
+Email: john@example.com
+
+WhatsApp:
++61 123 456 789
+
+Company:
+ABC Pty Ltd
+
+Country:
+Australia
+
+Service:
+AI & Machine Learning
+
+Budget:
+$1000 - $3000
+
+Timeline:
+Within 1 Month
+
+Project Description:
+Need an image classification system for medical images with cloud deployment.
+
+Place three buttons above the form:
+
+Start a Project
+
+For commercial clients
+
+Join AglenX Academy
+
+For tutoring/students
+
+Research Collaboration
+
+For universities and researchers
+

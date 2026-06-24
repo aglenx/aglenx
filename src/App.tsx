@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import { TeamSection } from "./components/Marquee";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
+import Courses from "./components/Courses";
 
 import Contact from "./components/Contact";
 
@@ -19,6 +20,7 @@ export default function App() {
 
                 <Services />
                 <Projects />
+                <Courses />
 
                 <TeamSection />
                 <Contact />
