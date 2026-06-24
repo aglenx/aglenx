@@ -83,33 +83,6 @@ export default function Contact() {
         return Object.keys(newErrors).length === 0;
     };
 
-    const generateEmailBody = () => {
-        return `Name: ${formData.name}
-
-Email: ${formData.email}
-
-WhatsApp:
-${formData.whatsapp}
-
-Company:
-${formData.company || "N/A"}
-
-Country:
-${formData.country || "N/A"}
-
-Service:
-${formData.service}
-
-Budget:
-${formData.notSure ? "Not Sure Yet" : `${formData.currency} ${formData.budget || "N/A"}`}
-
-${inquiryType === "Join AglenX Academy" ? "Duration:" : "Timeline:"}
-${formData.timeline || "N/A"}
-
-Project Description:
-${formData.description}`;
-    };
-
     const handleEmailSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!validateForm()) return;
