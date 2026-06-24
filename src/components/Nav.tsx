@@ -11,6 +11,20 @@ export default function Nav() {
         { label: "Team", href: "#team" },
     ];
 
+    // Precisely scroll to a section, accounting for sticky nav height
+    const scrollToSection = (href: string) => {
+        if (href === "#" || href === "") return;
+        const id = href.replace("#", "");
+        // Small delay lets the mobile menu close animation finish before scrolling
+        setTimeout(() => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const navHeight = document.querySelector("header")?.offsetHeight ?? 64;
+            const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top, behavior: "smooth" });
+        }, 50);
+    };
+
     // Dynamically update the URL hash as the user scrolls
     useEffect(() => {
         const sections = Array.from(document.querySelectorAll<HTMLElement>("section[id]"));
@@ -209,8 +223,9 @@ export default function Nav() {
                                     key={l.label}
                                     href={l.href}
                                     onClick={(e) => {
-                                        if (l.href === "#") e.preventDefault();
+                                        e.preventDefault();
                                         setMenuOpen(false);
+                                        scrollToSection(l.href);
                                     }}
                                     style={{
                                         fontFamily: "Work Sans, sans-serif",
@@ -227,7 +242,11 @@ export default function Nav() {
                             ))}
                             <a
                                 href="#contact"
-                                onClick={() => setMenuOpen(false)}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setMenuOpen(false);
+                                    scrollToSection("#contact");
+                                }}
                                 style={{
                                     fontFamily: "Work Sans, sans-serif",
                                     fontSize: "15px",

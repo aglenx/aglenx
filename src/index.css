@@ -22,6 +22,14 @@
 html, body, #root {
   margin: 0;
   padding: 0;
+  /* Offset anchor scroll targets by the sticky nav height */
+  scroll-padding-top: 70px;
+}
+
+@media (max-width: 809.98px) {
+  html {
+    scroll-padding-top: 62px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p, figure {
